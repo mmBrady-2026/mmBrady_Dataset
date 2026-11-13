@@ -1,0 +1,67 @@
+{
+  "participants": 8,
+  "windows": 10,
+  "dtype": "float32",
+  "window_seconds": 3,
+  "frame_rate_hz": 30,
+  "arrays": {
+    "radar.npy": [
+      "N",
+      90,
+      2,
+      64,
+      20
+    ],
+    "imu_features.npy": [
+      "N",
+      14
+    ],
+    "motion_label.npy": [
+      "N"
+    ],
+    "stage_label.npy": [
+      "N"
+    ],
+    "score_label.npy": [
+      "N"
+    ],
+    "range_bin_scope.npy": [
+      "N",
+      90,
+      2
+    ]
+  },
+  "imu_feature_order": [
+    "wrist_rms_acc",
+    "wrist_std_acc",
+    "wrist_90th_percentile_acc",
+    "wrist_iqr_acc",
+    "wrist_std_gyro",
+    "wrist_rms_gyro",
+    "wrist_iqr_gyro",
+    "elbow_rms_acc",
+    "elbow_std_acc",
+    "elbow_90th_percentile_acc",
+    "elbow_iqr_acc",
+    "elbow_std_gyro",
+    "elbow_rms_gyro",
+    "elbow_iqr_gyro"
+  ],
+  "motion_labels": {
+    "0": "eating",
+    "1": "writing/drawing",
+    "2": "drinking"
+  },
+  "stage_labels": {
+    "0": "upward",
+    "1": "downward",
+    "2": "horizontal",
+    "3": "fine motor",
+    "4": "others"
+  },
+  "score_range": [
+    0,
+    12
+  ],
+  "alignment": "Array row i corresponds to row_index i in samples.csv."
+}
